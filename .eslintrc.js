@@ -21,6 +21,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
     'react/state-in-constructor': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'import/prefer-default-export': 'off',
     'jsx-a11y/control-has-associated-label': 'off',
     'no-console': ['error', { allow: ['tron'] }],
