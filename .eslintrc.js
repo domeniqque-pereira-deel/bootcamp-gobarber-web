@@ -28,4 +28,11 @@ module.exports = {
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
   },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src',
+      },
+    },
+  },
 };
