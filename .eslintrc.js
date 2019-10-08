@@ -27,6 +27,7 @@ module.exports = {
     'no-console': ['error', { allow: ['tron'] }],
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
+    'no-underscore-dangle': 'off',
   },
   settings: {
     'import/resolver': {
