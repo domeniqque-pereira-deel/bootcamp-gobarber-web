@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 
 import Notifications from '~/components/Notifications';
 
-import { Container, Content, Profile } from './styles';
 import logo from '~/assets/logo-purple.svg';
+import { Container, Content, Profile } from './styles';
+
+const getAvatar = profile => {
+  if (profile?.avatar?.url) {
+    return profile.avatar.url;
+  }
+
+  return `https://avatars.dicebear.com/api/adventurer/${profile.name}.svg`;
+};
 
 export default function Header() {
   const profile = useSelector(state => state.user.profile);
@@ -26,13 +34,7 @@ export default function Header() {
               <Link to="/profile">Meu Perfil</Link>
             </div>
 
-            <img
-              src={
-                profile.avatar.url ||
-                'https://api.adorable.io/avatars/50/asdasdzxcvzxcvz.png'
-              }
-              alt="Domeniqque Dylluar"
-            />
+            <img src={getAvatar(profile)} alt={profile.name} />
           </Profile>
         </aside>
       </Content>
