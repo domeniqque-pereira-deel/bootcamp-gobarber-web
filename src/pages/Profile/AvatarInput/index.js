@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useField } from '@rocketseat/unform';
 
-import { Container } from './styles';
 import api from '~/services/api';
+import { Container } from './styles';
 
 export default function AvatarInput() {
   const { defaultValue, registerField } = useField('avatar');

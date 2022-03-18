@@ -28,6 +28,9 @@ module.exports = {
     'react/prop-types': 'off',
     'no-param-reassign': 'off',
     'no-underscore-dangle': 'off',
+    'react/jsx-no-bind': 'off',
+    'camelcase': 'off',
+    'no-console': 'warn'
   },
   settings: {
     'import/resolver': {

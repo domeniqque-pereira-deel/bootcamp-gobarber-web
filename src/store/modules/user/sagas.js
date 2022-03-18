@@ -6,7 +6,6 @@ import { updateProfileSuccess, updateProfileFailure } from './actions';
 
 export function* updateProfile({ payload }) {
   try {
-    // eslint-disable-next-line camelcase
     const { name, email, avatar_id, ...rest } = payload.data;
 
     const profile = {
